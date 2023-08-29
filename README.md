@@ -1,13 +1,13 @@
 # Turborepo starter
 
-This is an official starter Turborepo.
+This is a slightly modified version of the official starter Turborepo. It includes a few extras for linting and formatting.
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest
+git clone git@github.com:gmdotdev/turbo-starter.git turbo-starter
 ```
 
 ## What's inside?
@@ -16,9 +16,7 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `web`: another [Next.js](https://nextjs.org/) app. uses shadcn-ui.
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -37,7 +35,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd turbo-starter
 pnpm build
 ```
 
@@ -46,7 +44,7 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd turbo-starter
 pnpm dev
 ```
 
@@ -57,7 +55,7 @@ Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
+cd turbo-starter
 npx turbo login
 ```
 
